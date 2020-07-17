@@ -151,6 +151,9 @@ const articleMaker = (title, date, firstParagraph, secondParagraph, thirdParagra
 return articleCard;
 }
 
+const newArticle = {title:'Super Awesome Title', date:'July 14 2020', firstParagraph:"I don't really have much to say", secondParagraph:'Go me! I did it!', thirdParagraph:'I would really like some mint chocolate chip ice cream'}
+data.push(newArticle);
+
 data.forEach((obj) => {
   article.appendChild(articleMaker(obj.title, obj.date, obj.firstParagraph, obj.secondParagraph, obj.thirdParagraph));
 });
